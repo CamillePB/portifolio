@@ -2,10 +2,13 @@
 
 :root {
     --background-page: #FFF9E7;
-    --background-nav: #3A53E3;
+    --background-nav: #3793C9;
+    --background-footer: #235d7e;
+    --btn-background: #b3943e;
+    --btn-background-clear:#dab349;
     --white: #FFFFFF;
     --gray: #C0C0C0;
-    --yellow: #F8CD53;
+    --yellow: #e0b849;
     --black: #000000;
     --blue: #191970;
 }
@@ -69,14 +72,14 @@ hr {
 }
 
 nav {
-    margin: 0 auto;
-    width: 80vw;
+   
+    width: 98.8vw;
     display: flex;
     justify-content: space-between;
     background-color: var(--background-nav);
     font-size: 1.5rem;
-    padding: 2.25rem 1.5rem;
-    box-shadow: 2px 2px 5px var(--gray);
+    padding: 1.5rem 1.5rem;
+    box-shadow: 0px 2px 5px var(--gray);
 }
 
 nav a {
@@ -88,22 +91,24 @@ nav a {
 
 .logo {
     display: flex;
-    width: 20%;
+    width: 30%;
     justify-content: left;
     position: relative;
     align-items: center;
 }
 
 .icone {
-    width: 5rem;
+    width: 3rem;
+    border-radius: 5px;
     display: flex;
-    padding-left: 1rem;
+    padding-left: 0rem;
+    margin: 0 10px 0 10px;
 }
 
 .titulo{
   font-family: 'Lato', cursive;
   color: var(--white);
-  font-size: 1.5rem;
+  font-size: 1.4rem;
   letter-spacing: 3px;
     font-weight: 800;
 }
@@ -113,7 +118,7 @@ ul {
     align-items: center;
     display: flex;
     gap: 1rem;
-    font-size: 24px;
+    font-size: 1rem;
     color: var(--white);
 }
 
@@ -152,15 +157,13 @@ main {
 }
 
 footer {
-    width: 80vw;
-    margin: 0 auto;
+    width: 98.8vw;
     padding-top: 1rem;
-    padding-bottom: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    background-color: var(--black);
+    background-color: var(--background-footer);
 }
 
 .redes_sociais {
@@ -173,7 +176,7 @@ footer {
 .by {
     display: flex;
     padding-top: 0.25rem;
-    color: var(--yellow);
+    color: white;
 }
 
 .icons {
@@ -216,6 +219,7 @@ button {
     border-radius: 8px;
     font-size: 1rem;
     color: var(--black);
+    
 }
 
 input::placeholder,
@@ -225,24 +229,25 @@ textarea::placeholder {
 
 input,
 textarea {
-    border: 1px solid var(--blue);
+    border: 1px solid var(--btn-background);
 }
 
-button {
+button{
     font-family: 'lato', Roboto;
-    background-color: var(--background-nav);
+    background-color: var(--btn-background);
     color: var(--white);
     font-weight: bold;
     cursor: pointer;
-    border: 2px solid var(--blue)
+    border: 2px solid var(--btn-background)
 }
 
 button:hover {
-    background-color: var(--blue);
-    color: var(--yellow);
+    background-color: var(--btn-background-clear);
+    color:white;
 }
 
 .campos-form {
+    margin-top: 1rem;
     margin-bottom: 1rem;
 }
 
@@ -262,6 +267,7 @@ button:hover {
     }
 
     .titulo{
+        
         text-align: center;
     }
 
