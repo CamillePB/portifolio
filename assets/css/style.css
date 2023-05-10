@@ -7,7 +7,7 @@
     --btn-background: #b3943e;
     --btn-background-clear:#dab349;
     --white: #FFFFFF;
-    --gray: #C0C0C0;
+    --gray: #474747;
     --yellow: #e0b849;
     --black: #000000;
     --blue: #191970;
@@ -135,6 +135,8 @@ main {
     border-radius: 16px;
     align-items: center;
     gap: 20px;
+    font-weight: bold;
+    color:var(--gray);
 }
 
 .foto {
